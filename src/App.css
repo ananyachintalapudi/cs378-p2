@@ -3,6 +3,65 @@
   Below, you can see an example of a class called "menu" that changes the color of the text to blue. Modify according to your needs.
 */
 
-.menu {
-  color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=League+Script&family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.logo {
+  text-align: center;
+  padding: 10% 10% 2% 10%;
+}
+
+.h1 {
+  font-family: "Neonderthaw", serif;
+  color: #6F4E37 !important;
+  text-align: center;
+}
+
+.h2 {
+  font-family: "Lexend Giga", serif;
+  color: black;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.menu_item h3 {
+  font-family: "Lato", serif;
+  color: #6F4E37;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.menu_item h4 {
+  font-family: "Lato", serif;
+  color: black;
+  font-size: large;
+}
+
+.menu_item h5 {
+  font-family: "Lato", serif;
+  color: #a2820c;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.menu_item {
+  padding: 2% 1% 2% 1%;
+}
+
+.menu_img {
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.add_button {
+  background-color: #a2820c;
+  font-family: "Lato", serif;
+  font-size: medium;
+  color: white;
+  border: none;
+  border-radius: 45%;
+  display: block;
+  margin-left: auto;
 }
