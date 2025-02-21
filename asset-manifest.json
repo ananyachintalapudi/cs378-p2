@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cs378-p2/static/css/main.cad0ffa7.css",
-    "main.js": "/cs378-p2/static/js/main.d7955b3a.js",
+    "main.css": "/cs378-p2/static/css/main.9e9dff19.css",
+    "main.js": "/cs378-p2/static/js/main.53fa3887.js",
     "static/js/453.02680e19.chunk.js": "/cs378-p2/static/js/453.02680e19.chunk.js",
     "static/media/cocoa.png": "/cs378-p2/static/media/cocoa.acedcea8a7b433591cc2.png",
     "static/media/chai.png": "/cs378-p2/static/media/chai.3d8a059f0363d7642c3e.png",
@@ -9,12 +9,12 @@
     "static/media/matcha.png": "/cs378-p2/static/media/matcha.6e5f9aaac4d15a0cd5d2.png",
     "static/media/addkited_logo.png": "/cs378-p2/static/media/addkited_logo.afd297adad1a2624d646.png",
     "index.html": "/cs378-p2/index.html",
-    "main.cad0ffa7.css.map": "/cs378-p2/static/css/main.cad0ffa7.css.map",
-    "main.d7955b3a.js.map": "/cs378-p2/static/js/main.d7955b3a.js.map",
+    "main.9e9dff19.css.map": "/cs378-p2/static/css/main.9e9dff19.css.map",
+    "main.53fa3887.js.map": "/cs378-p2/static/js/main.53fa3887.js.map",
     "453.02680e19.chunk.js.map": "/cs378-p2/static/js/453.02680e19.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cad0ffa7.css",
-    "static/js/main.d7955b3a.js"
+    "static/css/main.9e9dff19.css",
+    "static/js/main.53fa3887.js"
   ]
 }
