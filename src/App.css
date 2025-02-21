@@ -25,6 +25,13 @@
   padding-bottom: 5%;
 }
 
+.h3 {
+  font-family: "Lexend Giga", serif;
+  font-size: medium !important;
+  color: black;
+  text-align: center;
+}
+
 .menu_item h3 {
   font-family: "Lato", serif;
   color: #6F4E37;
@@ -64,4 +71,47 @@
   border-radius: 45%;
   display: block;
   margin-left: auto;
+}
+
+.count_button {
+  background-color: #a2820c;
+  font-family: "Lato", serif;
+  font-size: large;
+  width: 30px;
+  color: white;
+  border: none;
+  border-radius: 100%;
+}
+
+.count_button:disabled {
+  background-color: #868275;
+}
+
+.order_button {
+  background-color: #a2820c;
+  font-family: "Lexend Giga", serif;
+  font-size: medium;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+}
+
+.cancel_button {
+  background-color: #a2820c;
+  font-family: "Lexend Giga", serif;
+  font-size: medium;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  display: block;
+  margin: auto;
+}
+
+.footer {
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
