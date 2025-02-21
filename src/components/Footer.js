@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Footer = ({ subtotal, clear }) => {
+const Footer = ({ subtotal, clear, order }) => {
     return (
         <div className="row footer">
             <div className="col">
                 <div className="h3">SUBTOTAL: ${subtotal}</div>
             </div>
             <div className="col">
-                <button className="order_button"> Order
+                <button className="order_button" onClick={order}> Order
                 </button>
             </div>
             <div className="col">

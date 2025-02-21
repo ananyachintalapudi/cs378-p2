@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import MenuItem from './components/MenuItem';
 import MenuTitle from './components/MenuTitle';
 import Footer from './components/Footer';
+import Order from './components/Order';
 import latte from './images/latte.png'
 import chai from './images/chai.png'
 import matcha from './images/matcha.png'
@@ -20,7 +21,7 @@ const menuItems = [
     description: 'Brewed espresso combined with cold milk and ice.',
     alt: 'Image of an Iced Latte',
     imageName: latte,
-    price: '$4.00',
+    price: 4.00,
     count: 0,
   },
   {
@@ -29,7 +30,7 @@ const menuItems = [
     description: 'Spiced black tea combined with milk and ice.',
     alt: 'Image of an Iced Chai',
     imageName: chai,
-    price: '$3.50',
+    price: 3.50,
     count: 0,
   },
   {
@@ -38,7 +39,7 @@ const menuItems = [
     description: 'Matcha powder combined with milk and ice.',
     alt: 'Image of an Iced Matcha',
     imageName: matcha,
-    price: '$4.30',
+    price: 4.30,
     count: 0,
   },
   {
@@ -47,11 +48,10 @@ const menuItems = [
     description: 'Melted chocolate and hot milk with a cayenne twist.',
     alt: 'Image of Hot Chocolate',
     imageName: cocoa,
-    price: '$2.50',
+    price: 2.50,
     count: 0,
   }
 ];
-
 
 function App() {
 
@@ -72,27 +72,41 @@ function App() {
   };
 
   let subtotal = 0;
-  items.forEach(item => subtotal += item.count);
+  items.forEach(item => subtotal += (item.count * item.price));
 
   const clear = () => {
     setItems(items.map(item => ({ ...item, count: 0 })));
   }
 
-  const order = () => {
-    alert()
-  }
+  const [show, setShow] = useState(false);
+  const [alert, setAlert] = useState("");
 
-  const [alert, setAlert] = useState(false);
+  const order = () => {
+    let details = "No items in cart.";
+
+    if (subtotal == 0) {
+      details = "No items in cart.";
+    }
+    else {
+      details = items
+        .filter(item => item.count > 0)
+        .map(item => `${item.title}: ${item.count}`)
+        .join(", ");
+    }
+    setAlert(details);
+    setShow(true);
+  }
 
   return (
     <div class="container">
       <MenuTitle logo={logo} />
       <div className="menu">
+        <Order show={show} alert={alert} setShow={setShow} />
         {items.map(item => (
           <MenuItem key={item.id} menuItem={item} increment={increment} decrement={decrement} />
         ))}
       </div>
-      <Footer subtotal={subtotal} clear={clear} />
+      <Footer subtotal={subtotal} clear={clear} order={order} alert={alert} show={show} setShow={setShow} />
     </div>
   );
 }

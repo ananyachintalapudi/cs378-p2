@@ -6,7 +6,6 @@ import React, { useState } from 'react';
 // Hint: You can use the image name to get the image from the images folder.
 const MenuItem = ({ menuItem, increment, decrement }) => {
 
-  // const [count, setCount] = useState(0);
   const handleIncrement = () => {
     increment(menuItem.id);
   };
@@ -27,11 +26,11 @@ const MenuItem = ({ menuItem, increment, decrement }) => {
               <h3>{menuItem.title}</h3>
               <h4>{menuItem.description}</h4>
             </div>
-            <div class="row">
-              <div class="col">
-                <h5>{menuItem.price}</h5>
+            <div className="row">
+              <div class="col-4">
+                <h5>${menuItem.price}</h5>
               </div>
-              <div class="col">
+              <div className="col count_align">
                 <div class="row">
                   <div class="col">
                     <button className="count_button" disabled={menuItem.count < 1} onClick={handleDecrement}> -

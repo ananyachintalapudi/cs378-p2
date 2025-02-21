@@ -77,14 +77,27 @@
   background-color: #a2820c;
   font-family: "Lato", serif;
   font-size: large;
-  width: 30px;
+  width: 15px;
+  height: 15px;
   color: white;
   border: none;
   border-radius: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
 }
 
 .count_button:disabled {
   background-color: #868275;
+}
+
+.count_align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .order_button {
@@ -114,4 +127,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.center_alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
